@@ -21,8 +21,10 @@
 #default_json = "/Users/sir/Clapton/Clapton/Hackathon_RS.json"
 from pathlib import Path
 #default_image_dir = str(Path.home())+"/Allianz/ocr-data/scan10sep17done/_jpg/wallenfels"
-default_image_dir = str(Path.home())+"/Allianz/RSV_Data_1/S2680"
-default_json = str(Path.home())+"/Clapton/Clapton/Hackathon_RS.json"
+#default_image_dir = str(Path.home())+"/Allianz/RSV_Data_1/S2680"
+#default_json = str(Path.home())+"/Clapton/Clapton/Hackathon_RS.json"
+default_image_dir = str(Path.home())
+default_json = "/usr/local/bin/Hackathon_RS.json"
 
 import sys
 import os
