@@ -1,0 +1,271 @@
+{
+  "valid": [
+    ".",
+    {
+    "verifiziert" : " "
+    }
+  ],
+  "valid_data": [
+  "p",
+  {
+    "pii": [
+      "p", {
+      "verifiziert": " "
+        }]
+    }
+  ],
+
+  "title_page": [
+    "t",
+    {
+    "verifiziert" : " ",
+    "german" : "titelseite"
+    }
+  ],
+  "invoice_court_data": [
+    "c",
+    {
+      "verifiziert" : " ",
+      "date_of_invoice": [
+        "d", {
+        "verifiziert": " "
+        }],
+      "court_case_number": [
+        "n", {
+        "verifiziert": " "
+        }],
+      "court_designation": [
+        "i", {
+        "verifiziert": " "
+        }],
+      "court_contact_details": [
+        "c", {
+        "verifiziert": " "
+        }],
+      "payments_reference_number": [
+        "p", {
+        "verifiziert": " "
+        }],
+      "value_of_case": [
+        "v", {
+        "verifiziert": " "
+        }],
+      "total_sum_due": [
+        "s", {
+        "verifiziert": " "
+        }],
+      "bank_information": [
+        "b", {
+        "verifiziert": " "
+        }]
+    }
+  ],
+  "invoice_court": [
+    "c",
+    {
+    "verifiziert" : " ",
+    "german" : "kostenrechnung_gericht"
+    }
+  ],
+
+  "invoice_lawyer_data": [
+    "l",
+    {
+      "verifiziert" : " ",
+      "date_of_invoice": [
+        "d", {
+        "verifiziert": " "
+        }],
+      "court_case_number": [
+        "n", {
+        "verifiziert": " "
+        }],
+      "lawyers_case_number": [
+        "n", {
+        "verifiziert": " "
+        }],
+      "court_designation": [
+        "i", {
+        "verifiziert": " "
+        }],
+      "lawyers_contact_details": [
+        "c", {
+        "verifiziert": " "
+        }],
+      "value_of_case": [
+        "v", {
+        "verifiziert": " "
+        }],
+      "total_sum_due": [
+        "s", {
+        "verifiziert": " "
+        }],
+      "bank_information": [
+        "b", {
+        "verifiziert": " "
+        }]
+    }
+  ],
+  "invoice_lawyer": [
+    "l",
+    {
+    "verifiziert" : " ",
+    "german" : "kostenrechnung_anwalt"
+    }
+  ],
+
+  "claims_filing_coverage_request": [
+    "f",
+    {
+    "verifiziert" : " ",
+    "german" : "deckungsanfrage_oder_schadenmeldung"
+    }
+  ],
+
+  "court_decision_data": [
+  "v",
+  {
+    "verifiziert" : " ",
+    "date_of_decision": [
+      "d", {
+      "verifiziert": " "
+      }],
+    "court_case_number": [
+      "n", {
+      "verifiziert": " "
+      }],
+    "court_designation": [
+      "i", {
+      "verifiziert": " "
+      }],
+    "claimants_lawyers": [
+      "c", {
+      "verifiziert": " "
+      }],
+    "defendants_lawyers": [
+      "c", {
+      "verifiziert": " "
+      }],
+    "value_of_case": [
+      "v", {
+      "verifiziert": " "
+      }],
+    "severance_amount": [
+      "s", {
+      "verifiziert": " "
+      }],
+    "ruling_judges": [
+      "j", {
+      "verifiziert": " "
+      }],
+
+
+    "decision_header": [
+      "h", {
+      "verifiziert": " "
+      }],
+    "decision_tenor": [
+      "t", {
+      "verifiziert": " "
+      }],
+    "decision_body": [
+      "b", {
+      "verifiziert": " "
+      }]
+
+    }
+  ],
+    "court_decision": [
+      "v",
+      {
+      "verifiziert" : " ",
+      "german" : "urteil"
+      }
+    ],
+
+  "court_order": [
+    "r",
+    {
+    "verifiziert" : " ",
+    "german" : "beschluss"
+    }
+  ],
+
+  "court_settlement_data": [
+    "s",
+    {
+      "verifiziert" : " ",
+      "date_of_settlement": [
+        "d", {
+        "verifiziert": " "
+        }],
+      "court_case_number": [
+        "n", {
+        "verifiziert": " "
+        }],
+      "court_designation": [
+        "i", {
+        "verifiziert": " "
+        }],
+      "claimants_lawyers": [
+        "c", {
+        "verifiziert": " "
+        }],
+      "defendants_lawyers": [
+        "c", {
+        "verifiziert": " "
+        }],
+      "value_of_case": [
+        "v", {
+        "verifiziert": " "
+        }],
+      "severance_amount": [
+        "s", {
+        "verifiziert": " "
+        }],
+      "ruling_judges": [
+        "j", {
+        "verifiziert": " "
+        }],
+      "settlement_header": [
+        "h", {
+        "verifiziert": " "
+        }],
+      "settlement_header_text": [
+        "t", {
+        "verifiziert": " "
+        }]
+    }
+  ],
+  "court_settlement": [
+    "s",
+    {
+    "verifiziert" : " ",
+    "german" : "vergleich"
+    }
+  ],
+
+  "draft_court_filing": [
+    "a",
+    {
+    "verifiziert" : " ",
+    "german" : "entwurf_klageschrift"
+    }
+  ],
+
+  "miscellaneous_inbound": [
+    "m",
+    {
+    "verifiziert" : " ",
+    "german" : "verschiedenes_eingang"
+    }
+  ],
+  "allianz_letters_outbound": [
+    "z",
+    {
+    "verifiziert" : " ",
+    "german" : "allianz_postausgang"
+    }
+  ]
+
+}
