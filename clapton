@@ -1,2 +1,3 @@
 #!/bin/bash
-python3 clapton.py
+cd /usr/local/bin
+python3 Clapton.py
