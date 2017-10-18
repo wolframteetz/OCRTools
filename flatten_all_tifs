@@ -1,0 +1,9 @@
+echo Flatten all TIFF files in the current directory. Usage e.g. : "flatten_all_tifs *.Tif" will result in ".Tif.TIFF" files created from all .Tif files in the current folder
+echo Starting...
+if [ -n "$1"] 
+then 
+find . -name "*.Tif" -exec flatten_tif {} \;
+else
+find . -name "$1" -exec flatten_tif {} \;
+fi
+echo Done.
