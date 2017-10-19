@@ -22,6 +22,15 @@
     "german" : "titelseite"
     }
   ],
+
+  "miscellaneous_inbound": [
+    "m",
+    {
+    "verifiziert" : " ",
+    "german" : "verschiedenes_eingang"
+    }
+  ],
+
   "invoice_court_data": [
     "c",
     {
@@ -257,13 +266,6 @@
     }
   ],
 
-  "miscellaneous_inbound": [
-    "m",
-    {
-    "verifiziert" : " ",
-    "german" : "verschiedenes_eingang"
-    }
-  ],
   "allianz_letters_outbound": [
     "z",
     {
