@@ -272,6 +272,14 @@
     "verifiziert" : " ",
     "german" : "allianz_postausgang"
     }
-  ]
+  ],
 
+  "separating_sheet": [
+    "x",
+    {
+    "verifiziert" : " ",
+    "german" : "trennblatt"
+    }
+  ]
+  
 }
