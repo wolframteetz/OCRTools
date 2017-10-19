@@ -86,7 +86,7 @@ class ClaptonWidget(QtWidgets.QWidget):
         QtWidgets.QShortcut(QtGui.QKeySequence("Ctrl+Down"), self, self.nextDocument)
         QtWidgets.QShortcut(QtGui.QKeySequence("Ctrl+Up"), self, self.previousDocument)
         QtWidgets.QShortcut(QtGui.QKeySequence("Ctrl+W"), self, self.close)
-        QtWidgets.QShortcut(QtGui.QKeySequence("Space"), self, self.openElement)
+        QtWidgets.QShortcut(QtGui.QKeySequence("Space"), self, self.nextDocument)
         QtWidgets.QShortcut(QtGui.QKeySequence("Esc"), self, self.removeElement)
         self.ui.treeWidget.setFocus()
     def clickSetDirectory(self):
