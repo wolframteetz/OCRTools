@@ -1,6 +1,5 @@
 #!/bin/bash
 echo Flattening $1
-for ((i=1;i<=END;i++));do
 for i in $(seq -f "%04g" 1 9999);do
 echo $i
 convert $1[$i] -scene 1 $1_$i.TIFF || break
