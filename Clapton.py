@@ -39,6 +39,8 @@ from mainwindow import Ui_Form
 app = QtWidgets.QApplication(sys.argv)
 #app = QApplication(sys.argv)
 
+DIRTY_QUICK_DAVID=True # Quick annotation - careful to use this flag it does not guarantee synchronization of display and json
+
 class ClaptonWidget(QtWidgets.QWidget):
     struc = "" # JSON Structure of Document Types
     quellOrdnerSelectedFilename=""
@@ -208,7 +210,16 @@ class ClaptonWidget(QtWidgets.QWidget):
             # WHILE LAST LIST ELEMENT IS NOT LEAF ADD FIRST LEAF TODO:::
             print (list)
             self.setArea(list)
-            self.ui.treeWidget.collapseAll()
+
+            #QtGui.QKeyEvent event(KeyPress, Qt::NoModifier, QString("")
+            #QMouseEvent event(QEvent.MouseButtonPress, pos, 0, 0, 0);
+            modifier=QtCore.Qt.NoModifier
+            text=None
+            event = QtGui.QKeyEvent(QtCore.QEvent.KeyPress, QtCore.Qt.Key_Down, modifier)
+            QtCore.QCoreApplication.postEvent(self.ui.treeWidget, event)
+            #QtCore.QCoreApplication.postEvent(self, event)
+
+            #self.ui.treeWidget.collapseAll()
 
     def treeWidget_recurse(self, list, selectedItem):
         if selectedItem is not None:
@@ -283,13 +294,27 @@ class ClaptonWidget(QtWidgets.QWidget):
                 print("AFTER_3")
                 cstruc["area_px"][0] +=  "," + posstr
                 print(cstruc["area_px"])
-            self.populateTreeWidgetFromStruc() # DIRTY TODO::
+            if (DIRTY_QUICK_DAVID):
+                selectedTreeItems = self.ui.treeWidget.selectedItems()
+                if selectedTreeItems is not None:
+                    if len(selectedTreeItems) > 0:
+                        selectedTreeItem = selectedTreeItems[0]
+                        selectedTreeItem.setBackground(0, QtGui.QColor(128,255,128))
+            else:
+                self.populateTreeWidgetFromStruc() # DIRTY TODO::
             self.saveJSON(self.struc)
             print ("R")
             print (cstruc)
         else:
             cstruc[name] = [cstruc[name],{"area_px" : [posstr]}]
-            self.populateTreeWidgetFromStruc() # DIRTY TODO::
+            if (DIRTY_QUICK_DAVID):
+                selectedTreeItems = self.ui.treeWidget.selectedItems()
+                if selectedTreeItems is not None:
+                    if len(selectedTreeItems) > 0:
+                        selectedTreeItem = selectedTreeItems[0]
+                        selectedTreeItem.setBackground(0, QtGui.QColor(128,255,128))
+            else:
+                self.populateTreeWidgetFromStruc() # DIRTY TODO::
             self.saveJSON(self.struc)
             print ("A")
             print (cstruc)
