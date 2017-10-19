@@ -77,15 +77,19 @@
         "verifiziert": " "
         }],
       "court_case_number": [
-        "n", {
+        "c", {
         "verifiziert": " "
         }],
       "lawyers_case_number": [
-        "n", {
+        "l", {
         "verifiziert": " "
         }],
       "court_designation": [
-        "i", {
+        "o", {
+        "verifiziert": " "
+        }],
+      "lawyers_name": [
+        "n", {
         "verifiziert": " "
         }],
       "lawyers_contact_details": [
